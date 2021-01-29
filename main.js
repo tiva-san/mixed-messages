@@ -17,9 +17,9 @@ const createArray = (dayArray, fortunesArray, actionsArray) => {
 };
 // Logs a random message to the console
 const generateMessage = nestedArray => {
-    let day = null;
-    let event = null;
-    let advice = null;
+    let day;
+    let event;
+    let advice;
     for(let i = 0; i < nestedArray.length; i++) {
         // Generates a random index based on current nested array length
         const randomIndex = Math.floor(Math.random() * nestedArray[i].length);
